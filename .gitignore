@@ -1,0 +1,50 @@
+# Whitelist: only analysis code and documentation are tracked.
+# Data, results, figures and manuscript files never go to the repository.
+
+# ---- ignore everything at the top level ----
+/*
+
+# ---- tracked ----
+!/.gitignore
+!/README.md
+!/LICENSE
+!/zeming.Rproj
+!/R/
+!/v2_clean/
+!/data/
+/data/*
+!/data/README.md
+
+# ---- outputs (regenerable) ----
+results/
+
+# ---- data / output file types, wherever they appear ----
+*.rds
+*.RData
+*.rda
+*.h5
+*.h5ad
+*.loom
+*.cloupe
+*.gz
+*.tbi
+*.bam
+*.bed
+*.csv
+*.tsv
+*.txt
+*.xlsx
+*.xls
+*.json
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.tiff
+*.svg
+*.docx
+
+# ---- R / RStudio / OS ----
+.Rhistory
+.Rproj.user/
+.DS_Store

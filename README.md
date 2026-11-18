@@ -60,27 +60,8 @@ MACS3_PATH=/path/to/macs3 Rscript v2_clean/code/R05_atac_landscape/atac_landscap
 Outputs are written to `v2_clean/results/<module>/`. Run scripts cache their analysis
 in `results/<module>/.../analysis_results.rds`; set `FORCE_ANALYSIS=1` to recompute.
 
-## Environment
-
-R 4.4.3 (macOS, aarch64). Main packages: Seurat 5.4.0, SeuratObject 5.3.0,
-Signac 1.16.0, scDblFinder 1.20.2, JASPAR2020 0.99.10, TFBSTools 1.44.0,
-motifmatchr 1.28.0, BSgenome.Mmusculus.UCSC.mm10 1.4.3, EnsDb.Mmusculus.v79 2.99.0,
-presto 1.0.0, ggplot2 4.0.1, patchwork 1.3.2, ggrepel 0.9.6, ggtext 0.1.2,
-ggforce 0.5.0, ggrastr 1.0.2, svglite 2.2.2, ragg 1.5.0, openxlsx 4.2.8.1, dplyr 1.1.4.
-Revision modules additionally use celda (DecontX), nichenetr 2.2.1 (NicheNet v2 mouse
-priors, Zenodo 7074291), msigdbr 26.1, fgsea, edgeR and MACS3 3.1.0.
-Full session information is written to `v2_clean/results/Figure4/sessionInfo.txt`
-when Fig. 4 is run.
-
-Figures use Arial; PDFs are written with the macOS Quartz device (editable text),
-with `cairo_pdf` as a fallback on other systems.
-
 ## Data and outputs
 
 Only code and documentation are version-controlled. Raw and processed data (`data/`),
 generated figures and tables (`v2_clean/results/`) and manuscript files are excluded
 by `.gitignore`.
-
-## Author
-
-Han Zhang (hanzhang)
